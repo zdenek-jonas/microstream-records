@@ -10,8 +10,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <microstream.version>04.01.00-MS-GA-SNAPSHOT</microstream.version>
+        <microstream.version>04.00.00-MS-GA</microstream.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>microstream-releases</id>
+            <url>https://repo.microstream.one/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
