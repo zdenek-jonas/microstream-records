@@ -15,12 +15,11 @@ public class RecordTest {
     Path location;
 
 
-
     @Test
     public void saveRecordTest() {
         PersonRecord personRecord = new PersonRecord("Maria", "Lukasova");
 
-        EmbeddedStorageManager storage = EmbeddedStorage.start(personRecord, location );
+        EmbeddedStorageManager storage = EmbeddedStorage.start(personRecord, location);
         storage.shutdown();
 
         PersonRecord secondRecord = new PersonRecord("Kamila", "Pazourkova");
