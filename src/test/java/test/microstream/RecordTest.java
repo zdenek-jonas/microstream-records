@@ -30,20 +30,4 @@ public class RecordTest {
 
     }
 
-    @Test
-    public void declaringClassTest() {
-        PersonRecord personRecord = new PersonRecord("Maria", "Lukasova");
-
-        EmbeddedStorageManager storage = EmbeddedStorage.start(personRecord, location );
-        storage.shutdown();
-
-        PersonRecord secondRecord = new PersonRecord("Kamila", "Pazourkova");
-        storage = EmbeddedStorage.start(secondRecord, location);
-
-        Class<?> f = secondRecord.getClass().getDeclaringClass();
-
-        Assertions.assertEquals("Maria", secondRecord.firstName());
-
-    }
-
 }
